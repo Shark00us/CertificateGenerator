@@ -84,9 +84,15 @@
     <Compile Include="JondiShaporCertificate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ImageExtensions.cs" />
+    <Compile Include="Extensions\ImageExtensions.cs" />
     <Compile Include="IOUtilities.cs" />
-    <Compile Include="OtherExtensions.cs" />
+    <Compile Include="Extensions\OtherExtensions.cs" />
+    <EmbeddedResource Include="Forms\CertificateViewerForm.resx">
+      <DependentUpon>CertificateViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JondiForm.resx">
+      <DependentUpon>JondiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -116,10 +122,8 @@
     <None Include="Resources\Backgrounds\jondibackground.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\My_logo%28500x500%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\myLogo.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

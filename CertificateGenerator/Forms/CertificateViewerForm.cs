@@ -1,4 +1,5 @@
-﻿using Stimulsoft.Base.Drawing;
+﻿using CertificateGenerator.Extensions;
+using Stimulsoft.Base.Drawing;
 using Stimulsoft.Report;
 using Stimulsoft.Report.Export;
 using System;
@@ -13,19 +14,18 @@ public partial class CertificateViewerForm : MetroFramework.Forms.MetroForm
     private readonly JondiShaporCertificate _jondiShaporCertificate;
     private readonly StiReport _report = new();
 
-    private readonly StiBmpExportSettings _reportSettings = new()
-    {
-        ImageResolution = 300,
-        ImageType = StiImageType.Bmp
-    };
+
 
     public CertificateViewerForm(JondiShaporCertificate jondiShaporCertificate)
     {
         StiUX.Theme = StiControlTheme.Dark;
         InitializeComponent();
+        this.ApplyFormIcon();
+        /**************************************************************/
         _jondiShaporCertificate = jondiShaporCertificate;
         Task.Run(InitializeAsync);
         stiViewer.Report = _report;
+        /**************************************************************/
         EnableSave();
     }
 
@@ -53,13 +53,18 @@ public partial class CertificateViewerForm : MetroFramework.Forms.MetroForm
         }
     }
 
-    private async Task ExportReportAndSave()
+    private async Task ExportCompressAndSaveReport()
     {
         try
         {
+            StiBmpExportSettings reportSettings = new()
+            {
+                ImageResolution = 300
+            };
             using MemoryStream reportAsStream = new MemoryStream();
-            await _report.ExportDocumentAsync(StiExportFormat.ImageBmp, reportAsStream, _reportSettings);
-            IOUtilities.SaveReportAsFile(_jondiShaporCertificate.FileName, reportAsStream);
+            await _report.ExportDocumentAsync(StiExportFormat.Image, reportAsStream, reportSettings);
+            MemoryStream compressedReportAsStream = reportAsStream.ReCompressImage();
+            IOUtilities.SaveReportAsFile(_jondiShaporCertificate.FileName, compressedReportAsStream);
         }
         catch (Exception e)
         {
@@ -74,8 +79,8 @@ public partial class CertificateViewerForm : MetroFramework.Forms.MetroForm
 
     private async void saveButton_Click(object sender, EventArgs e)
     {
-        await ExportReportAndSave();
-        IOUtilities.ShowResults(_jondiShaporCertificate.FileName);
+        await ExportCompressAndSaveReport();
+        IOUtilities.ShowReportResults(_jondiShaporCertificate.FileName);
         Application.Exit();
     }
 }

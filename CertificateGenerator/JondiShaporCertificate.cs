@@ -1,3 +1,4 @@
+using CertificateGenerator.Extensions;
 using System;
 using System.Data;
 using System.Drawing;
@@ -23,7 +24,7 @@ public class JondiShaporCertificate
         string nationalNumber, string courseEnd, string courseName, string courseLength)
     {
         FileName = nameAndSurname;
-        
+
         _userImage = userImage.ConvertPngToJpg().ResizeImage(234, 324).RoundCorners(38);
         _serialNumber = serialNumber;
         _nameAndSurname = nameAndSurname;
@@ -47,7 +48,7 @@ public class JondiShaporCertificate
 
         table.Columns.Add("UserImage", typeof(Image));
         table.Columns.Add("SerialNumber", typeof(string));
-        table.Columns.Add("NameAndSurname", typeof(string));
+        table.Columns.Add("Name", typeof(string));
         table.Columns.Add("FatherName", typeof(string));
         table.Columns.Add("DateOfBirth", typeof(string));
         table.Columns.Add("NationalNumber", typeof(string));

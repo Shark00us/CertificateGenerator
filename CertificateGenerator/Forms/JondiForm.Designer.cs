@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JondiForm));
             this.serialTextBox = new MetroFramework.Controls.MetroTextBox();
             this.nameTextBox = new MetroFramework.Controls.MetroTextBox();
             this.fatherNameTextBox = new MetroFramework.Controls.MetroTextBox();
@@ -58,14 +57,13 @@
             // 
             this.serialTextBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.serialTextBox.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
-            this.serialTextBox.Location = new System.Drawing.Point(274, 28);
+            this.serialTextBox.Location = new System.Drawing.Point(246, 28);
             this.serialTextBox.MaxLength = 10;
             this.serialTextBox.Multiline = true;
             this.serialTextBox.Name = "serialTextBox";
             this.serialTextBox.Size = new System.Drawing.Size(445, 37);
             this.serialTextBox.Style = MetroFramework.MetroColorStyle.Silver;
             this.serialTextBox.TabIndex = 1;
-            this.serialTextBox.Text = "11111111";
             this.serialTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.serialTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.serialTextBox.UseStyleColors = true;
@@ -75,14 +73,13 @@
             // 
             this.nameTextBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.nameTextBox.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
-            this.nameTextBox.Location = new System.Drawing.Point(274, 74);
+            this.nameTextBox.Location = new System.Drawing.Point(246, 74);
             this.nameTextBox.MaxLength = 35;
             this.nameTextBox.Multiline = true;
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(394, 37);
             this.nameTextBox.Style = MetroFramework.MetroColorStyle.Silver;
             this.nameTextBox.TabIndex = 2;
-            this.nameTextBox.Text = "11111111";
             this.nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nameTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.nameTextBox.UseStyleColors = true;
@@ -92,14 +89,13 @@
             // 
             this.fatherNameTextBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.fatherNameTextBox.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
-            this.fatherNameTextBox.Location = new System.Drawing.Point(274, 120);
+            this.fatherNameTextBox.Location = new System.Drawing.Point(246, 120);
             this.fatherNameTextBox.MaxLength = 20;
             this.fatherNameTextBox.Multiline = true;
             this.fatherNameTextBox.Name = "fatherNameTextBox";
             this.fatherNameTextBox.Size = new System.Drawing.Size(466, 37);
             this.fatherNameTextBox.Style = MetroFramework.MetroColorStyle.Silver;
             this.fatherNameTextBox.TabIndex = 3;
-            this.fatherNameTextBox.Text = "11111111";
             this.fatherNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.fatherNameTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.fatherNameTextBox.UseStyleColors = true;
@@ -109,14 +105,13 @@
             // 
             this.nationalIdTextBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.nationalIdTextBox.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
-            this.nationalIdTextBox.Location = new System.Drawing.Point(274, 210);
+            this.nationalIdTextBox.Location = new System.Drawing.Point(246, 210);
             this.nationalIdTextBox.MaxLength = 10;
             this.nationalIdTextBox.Multiline = true;
             this.nationalIdTextBox.Name = "nationalIdTextBox";
             this.nationalIdTextBox.Size = new System.Drawing.Size(457, 37);
             this.nationalIdTextBox.Style = MetroFramework.MetroColorStyle.Silver;
             this.nationalIdTextBox.TabIndex = 5;
-            this.nationalIdTextBox.Text = "11111111";
             this.nationalIdTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nationalIdTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.nationalIdTextBox.UseStyleColors = true;
@@ -126,14 +121,13 @@
             // 
             this.courseNameTextBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.courseNameTextBox.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
-            this.courseNameTextBox.Location = new System.Drawing.Point(274, 257);
+            this.courseNameTextBox.Location = new System.Drawing.Point(246, 257);
             this.courseNameTextBox.MaxLength = 50;
             this.courseNameTextBox.Multiline = true;
             this.courseNameTextBox.Name = "courseNameTextBox";
             this.courseNameTextBox.Size = new System.Drawing.Size(457, 37);
             this.courseNameTextBox.Style = MetroFramework.MetroColorStyle.Silver;
             this.courseNameTextBox.TabIndex = 6;
-            this.courseNameTextBox.Text = "11111111";
             this.courseNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.courseNameTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.courseNameTextBox.UseStyleColors = true;
@@ -143,14 +137,13 @@
             // 
             this.courseLengthTextBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.courseLengthTextBox.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
-            this.courseLengthTextBox.Location = new System.Drawing.Point(274, 348);
+            this.courseLengthTextBox.Location = new System.Drawing.Point(246, 348);
             this.courseLengthTextBox.MaxLength = 3;
             this.courseLengthTextBox.Multiline = true;
             this.courseLengthTextBox.Name = "courseLengthTextBox";
             this.courseLengthTextBox.Size = new System.Drawing.Size(445, 37);
             this.courseLengthTextBox.Style = MetroFramework.MetroColorStyle.Silver;
             this.courseLengthTextBox.TabIndex = 8;
-            this.courseLengthTextBox.Text = "11111111";
             this.courseLengthTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.courseLengthTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.courseLengthTextBox.UseStyleColors = true;
@@ -162,13 +155,12 @@
             this.dateOfBirthMaskedTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dateOfBirthMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateOfBirthMaskedTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.dateOfBirthMaskedTextBox.Location = new System.Drawing.Point(274, 166);
+            this.dateOfBirthMaskedTextBox.Location = new System.Drawing.Point(246, 166);
             this.dateOfBirthMaskedTextBox.Mask = "0000/00/00";
             this.dateOfBirthMaskedTextBox.Name = "dateOfBirthMaskedTextBox";
             this.dateOfBirthMaskedTextBox.PromptChar = ' ';
             this.dateOfBirthMaskedTextBox.Size = new System.Drawing.Size(445, 34);
             this.dateOfBirthMaskedTextBox.TabIndex = 4;
-            this.dateOfBirthMaskedTextBox.Text = "11111111";
             this.dateOfBirthMaskedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dateOfBirthMaskedTextBox.TextChanged += new System.EventHandler(this.TextBoxTextChanged);
             // 
@@ -178,13 +170,12 @@
             this.courseEndMaskedTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.courseEndMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.courseEndMaskedTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.courseEndMaskedTextBox.Location = new System.Drawing.Point(274, 304);
+            this.courseEndMaskedTextBox.Location = new System.Drawing.Point(246, 304);
             this.courseEndMaskedTextBox.Mask = "0000/00/00";
             this.courseEndMaskedTextBox.Name = "courseEndMaskedTextBox";
             this.courseEndMaskedTextBox.PromptChar = ' ';
             this.courseEndMaskedTextBox.Size = new System.Drawing.Size(424, 34);
             this.courseEndMaskedTextBox.TabIndex = 7;
-            this.courseEndMaskedTextBox.Text = "11111111";
             this.courseEndMaskedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.courseEndMaskedTextBox.TextChanged += new System.EventHandler(this.TextBoxTextChanged);
             // 
@@ -198,7 +189,7 @@
             this.generateButton.ForeColor = System.Drawing.Color.White;
             this.generateButton.Location = new System.Drawing.Point(23, 410);
             this.generateButton.Name = "generateButton";
-            this.generateButton.Size = new System.Drawing.Size(786, 37);
+            this.generateButton.Size = new System.Drawing.Size(756, 45);
             this.generateButton.TabIndex = 9;
             this.generateButton.Text = "ساخت گواهی";
             this.generateButton.UseVisualStyleBackColor = true;
@@ -209,7 +200,7 @@
             // 
             this.pictureSelectButton.Location = new System.Drawing.Point(23, 348);
             this.pictureSelectButton.Name = "pictureSelectButton";
-            this.pictureSelectButton.Size = new System.Drawing.Size(217, 41);
+            this.pictureSelectButton.Size = new System.Drawing.Size(189, 41);
             this.pictureSelectButton.Style = MetroFramework.MetroColorStyle.White;
             this.pictureSelectButton.TabIndex = 11;
             this.pictureSelectButton.TabStop = false;
@@ -225,7 +216,7 @@
             // 
             this.serialLabel.AutoSize = true;
             this.serialLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.serialLabel.Location = new System.Drawing.Point(725, 35);
+            this.serialLabel.Location = new System.Drawing.Point(697, 35);
             this.serialLabel.Name = "serialLabel";
             this.serialLabel.Size = new System.Drawing.Size(86, 25);
             this.serialLabel.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -238,7 +229,7 @@
             // 
             this.nationalIDLabel.AutoSize = true;
             this.nationalIDLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.nationalIDLabel.Location = new System.Drawing.Point(737, 216);
+            this.nationalIDLabel.Location = new System.Drawing.Point(709, 216);
             this.nationalIDLabel.Name = "nationalIDLabel";
             this.nationalIDLabel.Size = new System.Drawing.Size(72, 25);
             this.nationalIDLabel.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -251,7 +242,7 @@
             // 
             this.fatherLabel.AutoSize = true;
             this.fatherLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.fatherLabel.Location = new System.Drawing.Point(746, 127);
+            this.fatherLabel.Location = new System.Drawing.Point(718, 127);
             this.fatherLabel.Name = "fatherLabel";
             this.fatherLabel.Size = new System.Drawing.Size(65, 25);
             this.fatherLabel.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -264,7 +255,7 @@
             // 
             this.nameLabel.AutoSize = true;
             this.nameLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.nameLabel.Location = new System.Drawing.Point(671, 80);
+            this.nameLabel.Location = new System.Drawing.Point(643, 80);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(140, 25);
             this.nameLabel.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -277,7 +268,7 @@
             // 
             this.courseLengthLabel.AutoSize = true;
             this.courseLengthLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.courseLengthLabel.Location = new System.Drawing.Point(720, 352);
+            this.courseLengthLabel.Location = new System.Drawing.Point(692, 352);
             this.courseLengthLabel.Name = "courseLengthLabel";
             this.courseLengthLabel.Size = new System.Drawing.Size(89, 25);
             this.courseLengthLabel.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -290,7 +281,7 @@
             // 
             this.courseNameLabel.AutoSize = true;
             this.courseNameLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.courseNameLabel.Location = new System.Drawing.Point(736, 263);
+            this.courseNameLabel.Location = new System.Drawing.Point(708, 263);
             this.courseNameLabel.Name = "courseNameLabel";
             this.courseNameLabel.Size = new System.Drawing.Size(73, 25);
             this.courseNameLabel.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -303,7 +294,7 @@
             // 
             this.dateOfBirthLabel.AutoSize = true;
             this.dateOfBirthLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.dateOfBirthLabel.Location = new System.Drawing.Point(725, 171);
+            this.dateOfBirthLabel.Location = new System.Drawing.Point(697, 171);
             this.dateOfBirthLabel.Name = "dateOfBirthLabel";
             this.dateOfBirthLabel.Size = new System.Drawing.Size(84, 25);
             this.dateOfBirthLabel.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -316,7 +307,7 @@
             // 
             this.courseEndLabel.AutoSize = true;
             this.courseEndLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.courseEndLabel.Location = new System.Drawing.Point(704, 310);
+            this.courseEndLabel.Location = new System.Drawing.Point(676, 310);
             this.courseEndLabel.Name = "courseEndLabel";
             this.courseEndLabel.Size = new System.Drawing.Size(105, 25);
             this.courseEndLabel.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -328,7 +319,7 @@
             // logoPictureBox
             // 
             this.logoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logoPictureBox.Location = new System.Drawing.Point(89, 12);
+            this.logoPictureBox.Location = new System.Drawing.Point(73, 12);
             this.logoPictureBox.Name = "logoPictureBox";
             this.logoPictureBox.Size = new System.Drawing.Size(87, 78);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -341,7 +332,7 @@
             this.userPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userPictureBox.Location = new System.Drawing.Point(23, 96);
             this.userPictureBox.Name = "userPictureBox";
-            this.userPictureBox.Size = new System.Drawing.Size(217, 246);
+            this.userPictureBox.Size = new System.Drawing.Size(189, 246);
             this.userPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.userPictureBox.TabIndex = 9;
             this.userPictureBox.TabStop = false;
@@ -351,7 +342,7 @@
             this.AcceptButton = this.generateButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 470);
+            this.ClientSize = new System.Drawing.Size(802, 470);
             this.Controls.Add(this.logoPictureBox);
             this.Controls.Add(this.courseEndLabel);
             this.Controls.Add(this.dateOfBirthLabel);
@@ -385,6 +376,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

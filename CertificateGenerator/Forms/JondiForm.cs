@@ -1,4 +1,6 @@
-﻿using MetroFramework.Forms;
+﻿using CertificateGenerator.Extensions;
+using CertificateGenerator.Properties;
+using MetroFramework.Forms;
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -14,6 +16,9 @@ namespace CertificateGenerator.Forms
         public JondiForm()
         {
             InitializeComponent();
+            this.ApplyFormIcon();
+            logoPictureBox.Image = Resources.myLogoBig;
+            userPictureBox.EnableImageDragAndDrop();
         }
 
         private void pictureSelectButton_Click(object sender, EventArgs e)

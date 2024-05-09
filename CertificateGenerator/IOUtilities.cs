@@ -6,16 +6,16 @@ namespace CertificateGenerator
     internal static class IOUtilities
     {
         private static string CertificatesPath => Path.Combine(Application.StartupPath, "Certificates");
-        
+
         private static string CreateReportPath(string reportName)
         {
-            return Path.Combine(CertificatesPath, $"{reportName}.bmp");
+            return Path.Combine(CertificatesPath, $"{reportName}.jpg");
         }
         private static void CreateFolder(string path)
         {
             Directory.CreateDirectory(path);
         }
-        public static void ShowResults(string reportName)
+        public static void ShowReportResults(string reportName)
         {
             string reportFilePath = CreateReportPath(reportName);
             System.Diagnostics.Process.Start(CertificatesPath);
