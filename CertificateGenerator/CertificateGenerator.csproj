@@ -58,18 +58,11 @@
     <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
     </Reference>
-    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Base">
       <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Libs\Reports.NET\.NETFramework4.5.2\Stimulsoft.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Controls.Win">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Libs\Reports.NET\.NETFramework4.5.2\Stimulsoft.Controls.Win.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Report">
       <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Libs\Reports.NET\.NETFramework4.5.2\Stimulsoft.Report.dll</HintPath>
@@ -78,9 +71,7 @@
       <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Libs\Reports.NET\.NETFramework4.5.2\Stimulsoft.Report.Win.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
