@@ -83,9 +83,4 @@ public partial class CertificateViewerForm : MetroFramework.Forms.MetroForm
         IOUtilities.ShowReportResults(_jondiShaporCertificate.FileName);
         Application.Exit();
     }
-
-    private void userPictureBox_BackgroundImageChanged(object sender, EventArgs e)
-    {
-        throw new System.NotImplementedException();
-    }
 }
