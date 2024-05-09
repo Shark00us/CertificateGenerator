@@ -58,16 +58,13 @@ namespace CertificateGenerator.Extensions
                     string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
                     if (files.Length > 0)
                     {
-                        pictureBox.Image = Image.FromFile(files[0]);
+                        pictureBox.BackgroundImage = Image.FromFile(files[0]);
                     }
                 }
             }
             catch
             {
-                if (sender is PictureBox pictureBox)
-                {
-                    pictureBox.Image = null;
-                }
+                MessageBox.Show("Not a valid Image");
             }
         }
         private static void PictureBox_DragOver(object sender, DragEventArgs e)

@@ -11,7 +11,6 @@ namespace CertificateGenerator.Forms
 {
     public partial class JondiForm : MetroForm
     {
-        private Image _loadedImage;
 
         public JondiForm()
         {
@@ -26,8 +25,7 @@ namespace CertificateGenerator.Forms
             string path = OpenImageFileDialog();
             if (path != null)
             {
-                _loadedImage = LoadImage(path);
-                DisplayImage(_loadedImage);
+                userPictureBox.BackgroundImage = LoadImage(path);
             }
         }
 
@@ -51,12 +49,6 @@ namespace CertificateGenerator.Forms
             }
         }
 
-        private void DisplayImage(Image image)
-        {
-            userPictureBox.Image = image;
-            VerifyInputs();
-        }
-
         private void VerifyInputs()
         {
             bool stateOfInputs = !string.IsNullOrWhiteSpace(serialTextBox.Text) &&
@@ -68,7 +60,7 @@ namespace CertificateGenerator.Forms
                                      dateOfBirthMaskedTextBox.Text.Length == 10 &&
                                      courseEndMaskedTextBox.Text.Length == 10 &&
                                      !(dateOfBirthMaskedTextBox.Text + courseEndMaskedTextBox.Text).Contains(" ") &&
-                                     userPictureBox.Image != null;
+                                     userPictureBox.BackgroundImage != null;
             GenerateButtonEnableOrDisable(stateOfInputs);
         }
 
@@ -80,14 +72,12 @@ namespace CertificateGenerator.Forms
         private async void GenerateCertificate(object sender, EventArgs e)
         {
             string[] convertedTexts = await Task.Run(() => GetInputTexts().ArabicNumberToHindiNumbers());
-            JondiShaporCertificate jondiShaporCertificate = new JondiShaporCertificate(_loadedImage, convertedTexts[0], convertedTexts[1],
+            JondiShaporCertificate jondiShaporCertificate = new JondiShaporCertificate(userPictureBox.BackgroundImage, convertedTexts[0], convertedTexts[1],
                 convertedTexts[2], convertedTexts[3], convertedTexts[4],
                 convertedTexts[5], convertedTexts[6], convertedTexts[7]);
 
             using CertificateViewerForm certificateReviewer = new CertificateViewerForm(jondiShaporCertificate);
-            GenerateButtonEnableOrDisable(false);
             certificateReviewer.ShowDialog();
-            GenerateButtonEnableOrDisable(true);
         }
 
         private string[] GetInputTexts()
@@ -112,5 +102,9 @@ namespace CertificateGenerator.Forms
             generateButton.Enabled = generateButton.Visible = state;
         }
 
+        private void userPictureBox_BackgroundImageChanged(object sender, EventArgs e)
+        {
+            VerifyInputs();
+        }
     }
 }

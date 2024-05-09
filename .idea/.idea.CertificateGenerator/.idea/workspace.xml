@@ -8,14 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2548dd-e965-42fe-a7d2-829d31fce619" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CertificateGenerator/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CertificateGenerator/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CertificateGenerator/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CertificateGenerator/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CertificateGenerator/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CertificateGenerator/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CertificateGenerator/obj/Debug/CertificateGenerator.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CertificateGenerator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CertificateGenerator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CertificateGenerator/Extensions/OtherExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CertificateGenerator/Extensions/OtherExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CertificateGenerator/Forms/CertificateViewerForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CertificateGenerator/Forms/CertificateViewerForm.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CertificateGenerator/Forms/CertificateViewerForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CertificateGenerator/Forms/CertificateViewerForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CertificateGenerator/Forms/JondiForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CertificateGenerator/Forms/JondiForm.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CertificateGenerator/Forms/JondiForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CertificateGenerator/Forms/JondiForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CertificateGenerator/Resources/Reports/jondicert.mrt" beforeDir="false" afterPath="$PROJECT_DIR$/CertificateGenerator/Resources/Reports/jondicert.mrt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +53,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Project.CertificateGenerator.executor": "Run",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "Inspections-C#"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "rider.external.source.directories": [

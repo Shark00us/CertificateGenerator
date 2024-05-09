@@ -122,7 +122,7 @@
             this.courseNameTextBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.courseNameTextBox.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.courseNameTextBox.Location = new System.Drawing.Point(246, 257);
-            this.courseNameTextBox.MaxLength = 50;
+            this.courseNameTextBox.MaxLength = 45;
             this.courseNameTextBox.Multiline = true;
             this.courseNameTextBox.Name = "courseNameTextBox";
             this.courseNameTextBox.Size = new System.Drawing.Size(457, 37);
@@ -329,6 +329,7 @@
             // 
             // userPictureBox
             // 
+            this.userPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.userPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userPictureBox.Location = new System.Drawing.Point(23, 96);
             this.userPictureBox.Name = "userPictureBox";
@@ -336,6 +337,7 @@
             this.userPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.userPictureBox.TabIndex = 9;
             this.userPictureBox.TabStop = false;
+            this.userPictureBox.BackgroundImageChanged += new System.EventHandler(this.userPictureBox_BackgroundImageChanged);
             // 
             // JondiForm
             // 
@@ -376,7 +378,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
