@@ -15,6 +15,7 @@
     <LangVersion>default</LangVersion>
     <Nullable>enable</Nullable>
     <ApplicationIcon>Resources\myLogo.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,8 +27,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationVersion>1.0.1.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -55,11 +55,11 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    <Reference Include="MetroFramework">
+      <HintPath>..\libs\MetroFramework.dll</HintPath>
     </Reference>
-    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\libs\MetroFramework.Design.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Base">
       <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Libs\Reports.NET\.NETFramework4.5.2\Stimulsoft.Base.dll</HintPath>
@@ -79,6 +79,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Certificates\CertificateBases.cs" />
+    <Compile Include="Certificates\JondiLandscapeCerts.cs" />
+    <Compile Include="Certificates\JondiPortraitCerts.cs" />
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CertificateSaveBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CertificateSaveBox.Designer.cs">
+      <DependentUpon>CertificateSaveBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CertificateViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,45 +106,81 @@
     <Compile Include="Forms\JondiForm.Designer.cs">
       <DependentUpon>JondiForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="JondiShaporCertificate.cs" />
+    <Compile Include="Forms\JondiFormStyling.cs" />
+    <Compile Include="Forms\MetroOptionBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MetroOptionBox.Designer.cs">
+      <DependentUpon>MetroOptionBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MetroAlertBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MetroAlertBox.Designer.cs">
+      <DependentUpon>MetroAlertBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Strings\AppStrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Extensions\ImageExtensions.cs" />
-    <Compile Include="IOUtilities.cs" />
     <Compile Include="Extensions\OtherExtensions.cs" />
+    <Compile Include="Strings\PersianStrings.cs" />
+    <Compile Include="Utility-Side Classes\Alerter.cs" />
+    <Compile Include="Utility-Side Classes\FontInstaller.cs" />
+    <Compile Include="Utility-Side Classes\ImageCompressor.cs" />
+    <Compile Include="Utility-Side Classes\IoUtilities.cs" />
+    <Compile Include="Utility-Side Classes\CustomControls.cs" />
+    <Compile Include="Utility-Side Classes\MySettings.cs" />
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CertificateSaveBox.resx">
+      <DependentUpon>CertificateSaveBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CertificateViewerForm.resx">
       <DependentUpon>CertificateViewerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\JondiForm.resx">
       <DependentUpon>JondiForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MetroOptionBox.resx">
+      <DependentUpon>MetroOptionBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MetroAlertBox.resx">
+      <DependentUpon>MetroAlertBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Resources\Reports\jondicert.mrt" />
+    <EmbeddedResource Include="Resources\license.key" />
+    <EmbeddedResource Include="Resources\Fonts\InstallFont.ps1" />
+    <EmbeddedResource Include="Resources\Fonts\Vazirmatn Bold.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Vazirmatn Light.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Vazirmatn Regular.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Iran Nastaliq Bold.ttf" />
     <None Include="Resources\myLogo.ico" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Resources\Reports\LandscapeJondiCert.mrt" />
+    <EmbeddedResource Include="Resources\Reports\PortraitJondiCert.mrt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Backgrounds\jondibackground.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\myLogo.png" />
@@ -145,6 +196,36 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Backgrounds\JondiKarshenasiBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Backgrounds\JondiArshadBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Backgrounds\JondiDiplomBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Backgrounds\JondiDoctorBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Backgrounds\JondiKardaniBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Backgrounds\JondiPezeshkiBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Backgrounds\JondiPiraBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\linked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\unlinked.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

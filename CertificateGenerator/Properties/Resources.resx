@@ -118,16 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="jondibackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Backgrounds\jondibackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jondicert" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reports\jondicert.mrt;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="InstallFont" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fonts\InstallFont.ps1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Iran_Nastaliq_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fonts\Iran Nastaliq Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="JondiArshadBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backgrounds\JondiArshadBack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JondiDiplomBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backgrounds\JondiDiplomBack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JondiDoctorBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backgrounds\JondiDoctorBack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JondiKardaniBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backgrounds\JondiKardaniBack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JondiKarshenasiBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backgrounds\JondiKarshenasiBack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JondiPezeshkiBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backgrounds\JondiPezeshkiBack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JondiPiraBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backgrounds\JondiPiraBack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LandscapeJondiCert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reports\LandscapeJondiCert.mrt;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="license" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\license.key;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="linked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="myLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\myLogo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="myLogoBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\myLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortraitJondiCert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reports\PortraitJondiCert.mrt;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="unlinked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unlinked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vazirmatn_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fonts\Vazirmatn Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vazirmatn_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fonts\Vazirmatn Light.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vazirmatn_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fonts\Vazirmatn Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

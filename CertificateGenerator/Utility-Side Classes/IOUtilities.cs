@@ -1,31 +1,61 @@
-﻿using System.IO;
-using System.Windows.Forms;
+﻿using CertificateGenerator.Strings;
+using System;
+using System.Diagnostics;
+using System.IO;
 
 namespace CertificateGenerator.Utility_Side_Classes
 {
-    internal static class IOUtilities
+    internal static class IoUtilities
     {
-        private static string CertificatesPath => Path.Combine(Application.StartupPath, "Certificates");
+        private static AppStrings _appStrings;
 
-        private static string CreateReportPath(string reportName)
+        public static void InjectDependency(AppStrings strings)
         {
-            return Path.Combine(CertificatesPath, $"{reportName}.jpg");
+            _appStrings = strings;
         }
-        private static void CreateFolder(string path)
+
+        private static string GetUniqueFilePath(string path, string fileName)
         {
-            Directory.CreateDirectory(path);
+            string fullPath = CreateImagePath(path, fileName);
+            string extension = Path.GetExtension(fullPath);
+            if (!File.Exists(fullPath))
+            {
+                return fullPath;
+            }
+            int counter = 1;
+            string newPath;
+            do
+            {
+                newPath = Path.Combine(path, $"{fileName}({counter}){extension}");
+                counter++;
+            } while (File.Exists(newPath));
+
+            return newPath;
         }
-        public static void ShowReportResults(string reportName)
+
+        private static string CreateImagePath(string path, string fileName)
         {
-            string reportFilePath = CreateReportPath(reportName);
-            System.Diagnostics.Process.Start(CertificatesPath);
-            System.Diagnostics.Process.Start(reportFilePath);
+            return Path.Combine(path, $"{fileName}.jpg");
         }
-        public static void SaveReportAsFile(string reportName, MemoryStream reportData)
+        private static void ShowReportResults(string fullPath)
         {
-            CreateFolder(CertificatesPath);
-            string savePath = CreateReportPath(reportName);
-            File.WriteAllBytes(savePath, reportData.ToArray());
+            string directoryPath = Path.GetDirectoryName(fullPath);
+            Process.Start(directoryPath);
+            Process.Start(fullPath);
         }
+        public static void SaveAndShowReportAsFile(string path, string fileName, MemoryStream reportData)
+        {
+            try
+            {
+                string uniquePath = GetUniqueFilePath(path, fileName);
+                File.WriteAllBytes(uniquePath, reportData.ToArray());
+                ShowReportResults(uniquePath);
+            }
+            catch (Exception e)
+            {
+                Alerter.HandleException(e, _appStrings.ErrorSaveReportAsFile, true);
+            }
+        }
+
     }
 }

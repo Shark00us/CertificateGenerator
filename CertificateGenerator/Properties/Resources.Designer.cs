@@ -63,9 +63,9 @@ namespace CertificateGenerator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap jondibackground {
+        internal static System.Drawing.Bitmap clear {
             get {
-                object obj = ResourceManager.GetObject("jondibackground", resourceCulture);
+                object obj = ResourceManager.GetObject("clear", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,10 +73,120 @@ namespace CertificateGenerator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] jondicert {
+        internal static byte[] InstallFont {
             get {
-                object obj = ResourceManager.GetObject("jondicert", resourceCulture);
+                object obj = ResourceManager.GetObject("InstallFont", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Iran_Nastaliq_Bold {
+            get {
+                object obj = ResourceManager.GetObject("Iran_Nastaliq_Bold", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JondiArshadBack {
+            get {
+                object obj = ResourceManager.GetObject("JondiArshadBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JondiDiplomBack {
+            get {
+                object obj = ResourceManager.GetObject("JondiDiplomBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JondiDoctorBack {
+            get {
+                object obj = ResourceManager.GetObject("JondiDoctorBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JondiKardaniBack {
+            get {
+                object obj = ResourceManager.GetObject("JondiKardaniBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JondiKarshenasiBack {
+            get {
+                object obj = ResourceManager.GetObject("JondiKarshenasiBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JondiPezeshkiBack {
+            get {
+                object obj = ResourceManager.GetObject("JondiPezeshkiBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JondiPiraBack {
+            get {
+                object obj = ResourceManager.GetObject("JondiPiraBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] LandscapeJondiCert {
+            get {
+                object obj = ResourceManager.GetObject("LandscapeJondiCert", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] license {
+            get {
+                object obj = ResourceManager.GetObject("license", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap linked {
+            get {
+                object obj = ResourceManager.GetObject("linked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -97,6 +207,56 @@ namespace CertificateGenerator.Properties {
             get {
                 object obj = ResourceManager.GetObject("myLogoBig", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] PortraitJondiCert {
+            get {
+                object obj = ResourceManager.GetObject("PortraitJondiCert", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unlinked {
+            get {
+                object obj = ResourceManager.GetObject("unlinked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Vazirmatn_Bold {
+            get {
+                object obj = ResourceManager.GetObject("Vazirmatn_Bold", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Vazirmatn_Light {
+            get {
+                object obj = ResourceManager.GetObject("Vazirmatn_Light", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Vazirmatn_Regular {
+            get {
+                object obj = ResourceManager.GetObject("Vazirmatn_Regular", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }
