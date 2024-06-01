@@ -12,6 +12,13 @@ namespace CertificateGenerator.Forms
     {
         private readonly AppStrings _appStrings;
         private readonly MySettings _mYSettings = new MySettings();
+
+        private bool _showResults;
+        public bool ShowResults
+        {
+            get { return _showResults; }
+        }
+
         private string _path;
         public string Path
         {
@@ -30,6 +37,7 @@ namespace CertificateGenerator.Forms
             _appStrings = appStrings;
             _fileName = fileName;
             _path = _mYSettings.SavePath;
+            _showResults = _mYSettings.OpenResults;
             ApplyTexts();
             ApplyStyles();
             DialogResult = DialogResult.Abort;
@@ -39,6 +47,8 @@ namespace CertificateGenerator.Forms
         {
             savePathTextBox.Text = _path;
             fileNameTextBox.Text = _fileName;
+            showResultsCheckBox.Checked = _showResults;
+            showResultsCheckBox.Text = _appStrings.CertificateSaveBoxOpenResultsCheckBoxText;
             Text = _appStrings.CertificateSaveBoxTitle;
             fileNameLabel.Text = _appStrings.CertificateSaveBoxFileNameLabelText;
             selectPathButton.Text = _appStrings.CertificateSaveBoxPathSelectButtonText;
@@ -60,7 +70,9 @@ namespace CertificateGenerator.Forms
             if (!validFileName) return;
             _path = savePathTextBox.Text;
             _fileName = fileNameTextBox.Text;
+            _showResults = showResultsCheckBox.Checked;
             MySettings.SaveCertsPath(_path);
+            MySettings.SaveOpenResults(_showResults);
             DialogResult = DialogResult.OK;
             Close();
         }
@@ -86,6 +98,11 @@ namespace CertificateGenerator.Forms
             {
                 _path = savePathTextBox.Text = pathFolderBrowserDialog.SelectedPath;
             }
+        }
+
+        private void showResultsCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            _showResults = showResultsCheckBox.Checked;
         }
     }
 }

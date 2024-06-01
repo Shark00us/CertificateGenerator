@@ -39,16 +39,17 @@ namespace CertificateGenerator.Utility_Side_Classes
         }
         private static void ShowReportResults(string fullPath)
         {
-            string directoryPath = Path.GetDirectoryName(fullPath);
-            Process.Start(directoryPath);
+            //string directoryPath = Path.GetDirectoryName(fullPath);
+            //Process.Start(directoryPath);
             Process.Start(fullPath);
         }
-        public static void SaveAndShowReportAsFile(string path, string fileName, MemoryStream reportData)
+        public static void SaveAndShowReportAsFile(string path, string fileName, MemoryStream reportData, bool showResults)
         {
             try
             {
                 string uniquePath = GetUniqueFilePath(path, fileName);
                 File.WriteAllBytes(uniquePath, reportData.ToArray());
+                if (!showResults) return;
                 ShowReportResults(uniquePath);
             }
             catch (Exception e)

@@ -56,6 +56,7 @@ public abstract class AppStrings
     public abstract string FontsOptionsMessage { get; }
     public abstract string CertificateSaveBoxSaveButtonText { get; }
     public abstract string CertificateSaveBoxCloseButtonText { get; }
+    public abstract string CertificateSaveBoxOpenResultsCheckBoxText { get; }
     public abstract string CertificateSaveBoxTitle { get; }
     public abstract string CertificateSaveBoxPathSelectButtonText { get; }
     public abstract string CertificateSaveBoxFileNameLabelText { get; }

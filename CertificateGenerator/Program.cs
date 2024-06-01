@@ -52,14 +52,14 @@ namespace CertificateGenerator
 
         private static void ApplyLicense()
         {
-            Stimulsoft.Base.StiLicense.LoadFromEntryAssembly();
             try
             {
+                Stimulsoft.Base.StiLicense.LoadFromEntryAssembly();
                 _ = Stimulsoft.Base.StiLicense.Key;
             }
             catch (Exception ex)
             {
-                Alerter.HandleException(ex, PersianStrings.ErrorLicense, false);
+                Alerter.HandleException(ex, PersianStrings.ErrorLicense, true);
             }
         }
 

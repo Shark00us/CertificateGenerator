@@ -25,6 +25,12 @@ namespace CertificateGenerator.Utility_Side_Classes
             get { return _linkedTextBoxes; }
         }
 
+        private bool _openResults;
+        public bool OpenResults
+        {
+            get { return _openResults; }
+        }
+
         private string _nameAndSurname = string.Empty;
         public string NameAndSurname
         {
@@ -108,6 +114,7 @@ namespace CertificateGenerator.Utility_Side_Classes
             {
                 _installFonts = Properties.Settings.Default.tryFonts;
                 _linkedTextBoxes = Properties.Settings.Default.linkedTextBoxes;
+                _openResults = Properties.Settings.Default.openResult;
                 _nameAndSurname = Properties.Settings.Default.nameAndSurname;
                 _fatherName = Properties.Settings.Default.fatherName;
                 _dateOfBirth = Properties.Settings.Default.dateOfBirth;
@@ -191,6 +198,19 @@ namespace CertificateGenerator.Utility_Side_Classes
             try
             {
                 Properties.Settings.Default.linkedTextBoxes = linkedTextBoxes;
+                Properties.Settings.Default.Save();
+            }
+            catch (Exception ex)
+            {
+                Alerter.HandleException(ex, _appStrings.ErrorSavingSetting, false);
+            }
+        }
+
+        public static void SaveOpenResults(bool openResults)
+        {
+            try
+            {
+                Properties.Settings.Default.openResult = openResults;
                 Properties.Settings.Default.Save();
             }
             catch (Exception ex)

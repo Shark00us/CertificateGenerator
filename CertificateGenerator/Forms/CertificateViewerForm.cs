@@ -79,7 +79,7 @@ public partial class CertificateViewerForm : MetroFramework.Forms.MetroForm
         }
     }
 
-    private async Task ExportCompressAndSaveReport(string path, string fileName)
+    private async Task ExportCompressAndSaveReport(string path, string fileName, bool showResults)
     {
         StiBmpExportSettings reportSettings = new()
         {
@@ -90,7 +90,7 @@ public partial class CertificateViewerForm : MetroFramework.Forms.MetroForm
         {
             await _report.ExportDocumentAsync(StiExportFormat.Image, reportAsStream, reportSettings);
             MemoryStream compressedReportAsStream = _imageCompressor.ReCompressImage(reportAsStream);
-            IoUtilities.SaveAndShowReportAsFile(path, fileName, compressedReportAsStream);
+            IoUtilities.SaveAndShowReportAsFile(path, fileName, compressedReportAsStream, showResults);
         }
         catch (Exception ex)
         {
@@ -107,10 +107,11 @@ public partial class CertificateViewerForm : MetroFramework.Forms.MetroForm
     {
         string fileName;
         string path;
-        bool? validSave = Alerter.SelectSavePath(_report, _certificate.ExportFileName, out fileName, out path);
+        bool showResults;
+        bool? validSave = Alerter.SelectSavePath(_report, _certificate.ExportFileName, out fileName, out path, out showResults);
         if (validSave == null) return;
         saveButton.Enabled = false;
-        await ExportCompressAndSaveReport(path, fileName);
+        await ExportCompressAndSaveReport(path, fileName, showResults);
         Close();
     }
 }

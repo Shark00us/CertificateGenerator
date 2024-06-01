@@ -178,5 +178,17 @@ namespace CertificateGenerator.Properties {
                 this["savePath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool openResult {
+            get {
+                return ((bool)(this["openResult"]));
+            }
+            set {
+                this["openResult"] = value;
+            }
+        }
     }
 }

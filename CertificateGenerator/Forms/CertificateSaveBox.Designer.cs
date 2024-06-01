@@ -37,6 +37,7 @@
             this.fileNameLabel = new MetroFramework.Controls.MetroLabel();
             this.selectPathButton = new MetroFramework.Controls.MetroButton();
             this.pathFolderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.showResultsCheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.leftIconPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightIconPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +53,7 @@
             this.saveButton.ForegroundColor = System.Drawing.Color.White;
             this.saveButton.Highlight = true;
             this.saveButton.HighlightColor = System.Drawing.Color.DeepSkyBlue;
-            this.saveButton.Location = new System.Drawing.Point(53, 208);
+            this.saveButton.Location = new System.Drawing.Point(53, 231);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(364, 40);
             this.saveButton.Style = "Yellow";
@@ -92,7 +93,7 @@
             this.closeButton.ForegroundColor = System.Drawing.Color.White;
             this.closeButton.Highlight = true;
             this.closeButton.HighlightColor = System.Drawing.Color.Red;
-            this.closeButton.Location = new System.Drawing.Point(433, 208);
+            this.closeButton.Location = new System.Drawing.Point(433, 231);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(160, 40);
             this.closeButton.Style = "Yellow";
@@ -118,7 +119,7 @@
             // savePathTextBox
             // 
             this.savePathTextBox.BorderColor = System.Drawing.Color.Empty;
-            this.savePathTextBox.FontSize = MetroFramework.Drawing.MetroFontSize.Px12;
+            this.savePathTextBox.FontSize = MetroFramework.Drawing.MetroFontSize.Px18;
             this.savePathTextBox.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.savePathTextBox.Location = new System.Drawing.Point(23, 100);
             this.savePathTextBox.MaxLength = 220;
@@ -161,13 +162,28 @@
             this.selectPathButton.Text = "selectPath";
             this.selectPathButton.Click += new System.EventHandler(this.selectPathButton_Click);
             // 
+            // showResultsCheckBox
+            // 
+            this.showResultsCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.showResultsCheckBox.Font = new System.Drawing.Font("Vazirmatn Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showResultsCheckBox.ForeColor = System.Drawing.Color.White;
+            this.showResultsCheckBox.Location = new System.Drawing.Point(53, 194);
+            this.showResultsCheckBox.Name = "showResultsCheckBox";
+            this.showResultsCheckBox.Size = new System.Drawing.Size(540, 31);
+            this.showResultsCheckBox.TabIndex = 13;
+            this.showResultsCheckBox.TabStop = false;
+            this.showResultsCheckBox.Text = "showResults";
+            this.showResultsCheckBox.UseVisualStyleBackColor = false;
+            this.showResultsCheckBox.CheckedChanged += new System.EventHandler(this.showResultsCheckBox_CheckedChanged);
+            // 
             // CertificateSaveBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(644, 278);
+            this.ClientSize = new System.Drawing.Size(644, 300);
             this.ControlBox = false;
+            this.Controls.Add(this.showResultsCheckBox);
             this.Controls.Add(this.selectPathButton);
             this.Controls.Add(this.fileNameLabel);
             this.Controls.Add(this.savePathTextBox);
@@ -185,7 +201,7 @@
             this.ShadowType = MetroFramework.Forms.MetroForm.MetroFormShadowType.DropShadow;
             this.Style = "Yellow";
             this.StyleColor = System.Drawing.Color.SkyBlue;
-            this.Text = "Error";
+            this.Text = "save";
             this.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CertificateSaveBox_FormClosing);
@@ -206,5 +222,6 @@
         private MetroFramework.Controls.MetroLabel fileNameLabel;
         private MetroFramework.Controls.MetroButton selectPathButton;
         private System.Windows.Forms.FolderBrowserDialog pathFolderBrowserDialog;
+        private System.Windows.Forms.CheckBox showResultsCheckBox;
     }
 }

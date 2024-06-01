@@ -36,7 +36,7 @@ namespace CertificateGenerator.Utility_Side_Classes
             bool result = options.DialogResult == DialogResult.Yes;
             return result;
         }
-        public static bool? SelectSavePath(StiReport report, string originalName, out string fileName, out string path)
+        public static bool? SelectSavePath(StiReport report, string originalName, out string fileName, out string path, out bool showResults)
         {
             using CertificateSaveBox options = new CertificateSaveBox(_appStrings, originalName);
             options.ShowDialog();
@@ -45,10 +45,12 @@ namespace CertificateGenerator.Utility_Side_Classes
             {
                 fileName = options.FileName;
                 path = options.Path;
+                showResults = options.ShowResults;
                 return result;
             }
             fileName = null;
             path = null;
+            showResults = false;
             return null;
         }
     }

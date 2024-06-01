@@ -308,7 +308,7 @@ namespace CertificateGenerator.Forms
             this.certTypeComboBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.certTypeComboBox.Font = new System.Drawing.Font("Vazirmatn", 19F, System.Drawing.FontStyle.Bold);
             this.certTypeComboBox.ForeColor = System.Drawing.Color.White;
-            this.certTypeComboBox.ItemHeight = 58;
+            this.certTypeComboBox.ItemHeight = 49;
             this.certTypeComboBox.ItemTextHorizontalAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.certTypeComboBox.Location = new System.Drawing.Point(232, 27);
             this.certTypeComboBox.Name = "certTypeComboBox";
@@ -317,7 +317,7 @@ namespace CertificateGenerator.Forms
             this.certTypeComboBox.SelectedItemBackgroundColor = System.Drawing.Color.Empty;
             this.certTypeComboBox.SelectedItemForegroundColor = System.Drawing.Color.Black;
             this.certTypeComboBox.SelectedItemTextHorizontalAlignment = System.Windows.Forms.HorizontalAlignment.Right;
-            this.certTypeComboBox.Size = new System.Drawing.Size(308, 64);
+            this.certTypeComboBox.Size = new System.Drawing.Size(308, 55);
             this.certTypeComboBox.Style = "Orange";
             this.certTypeComboBox.StyleCOlor = System.Drawing.Color.Coral;
             this.certTypeComboBox.TabIndex = 0;

@@ -16,9 +16,10 @@ public class PersianStrings : AppStrings
 
     public override string CertificateSaveBoxSaveButtonText => "ذخیره";
     public override string CertificateSaveBoxCloseButtonText => "انصراف";
+    public override string CertificateSaveBoxOpenResultsCheckBoxText => "نمایش گواهی بعد از ذخیره";
     public override string CertificateSaveBoxTitle => "ذخیره گواهی";
     public override string CertificateSaveBoxPathSelectButtonText => "انتخاب مسیر";
-    public override string CertificateSaveBoxFileNameLabelText => "نام فایل گواهی";
+    public override string CertificateSaveBoxFileNameLabelText => ":نام فایل گواهی";
     public override string CertificateSaveBoxFolderDialogDescription => "انتخاب مسیر ذخیره گواهی";
     public override string AboutBoxTitle => "Certificate Generator";
     public override string AboutBoxAboutLabelText => "Made by Armin Talakoub \nCommissioned by BeHi236";

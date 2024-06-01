@@ -276,7 +276,6 @@ namespace CertificateGenerator.Forms
                     fatherNameTextBox.Clear();
                     dateOfBirthMaskedTextBox.Clear();
                     nationalIdTextBox.Clear();
-                    courseLengthOrUnitsTextBox.Clear();
                     avgTextBox.Clear();
                     nameTextBox.Focus();
                     userPictureBorderedPanel.BackgroundImage = null;
@@ -330,7 +329,6 @@ namespace CertificateGenerator.Forms
                 Alerter.HandleException(ex, _appStrings.ErrorLinkingTextBoxes, false);
             }
         }
-
     }
 
     internal enum JondiCertificateEnum
