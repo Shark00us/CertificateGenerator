@@ -40,7 +40,7 @@
       <Components isList="true" count="10">
         <backgroundImage Ref="4" type="Image" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>-0.07,-0.09,21,29.8</ClientRectangle>
+          <ClientRectangle>-0.1,-0.09,21.2,29.8</ClientRectangle>
           <Conditions isList="true" count="0" />
           <DataColumn>CertificateData.BackgroundImage</DataColumn>
           <Expressions isList="true" count="0" />
@@ -13254,10 +13254,10 @@ UHZdb3u/uugab3P/2Q==</ImageBytes>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>5/24/2024 5:35:07 PM</ReportChanged>
+  <ReportChanged>6/9/2024 1:34:26 AM</ReportChanged>
   <ReportCreated>4/30/2024 10:05:57 PM</ReportCreated>
-  <ReportFile>C:\Users\armin\Desktop\Shark00us\CertificateGenerator\CertificateGenerator\Resources\Reports\jondicert.mrt</ReportFile>
-  <ReportGuid>2ff9f9ca627541048357f634cafe3c91</ReportGuid>
+  <ReportFile>C:\Users\armin\Desktop\Shark00us\CertificateGenerator\CertificateGenerator\Resources\Reports\PortraitJondiCert.mrt</ReportFile>
+  <ReportGuid>6578aa9ba173456cbd95adb14b173192</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
   <ReportVersion>2023.1.1.0</ReportVersion>
