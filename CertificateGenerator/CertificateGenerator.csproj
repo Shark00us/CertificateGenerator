@@ -67,13 +67,13 @@
       <HintPath>..\libs\MetroFramework.Design.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Base">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Libs\Reports.NET\.NETFramework4.5.2\Stimulsoft.Base.dll</HintPath>
+      <HintPath>..\libs\Stimulsoft.Base.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Report">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Libs\Reports.NET\.NETFramework4.5.2\Stimulsoft.Report.dll</HintPath>
+      <HintPath>..\libs\Stimulsoft.Report.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Report.Win">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Libs\Reports.NET\.NETFramework4.5.2\Stimulsoft.Report.Win.dll</HintPath>
+      <HintPath>..\libs\Stimulsoft.Report.Win.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
